@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Script Number Multiplier</title>
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+	<h1>Use Java Script to mutiply numbers with ease</h1>
+	<label>Number 1</label>
+	<input id="userNumber1" type="number">
+	X
+	<label>Number 2</label>
+	<input id="userNumber2" type="number">
+
+	<button onclick="UserAnswer(userNumber1, userNumber2)">Check</button>
+	
+	<br>
+
+	<div id="userAnswer"></div>
+
+	<script>
+		
+		function UserAnswer(userNumber1, userNumber2) {
+			var x = userNumber1.value * userNumber2.value;
+			document.getElementById("userAnswer").innerHTML = ("The answer is " + x);
+		}
+
+
+	</script>
+
+</body>
+</html>
